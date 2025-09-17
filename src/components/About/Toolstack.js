@@ -1,16 +1,11 @@
-import React from "react";
+
 import { Col, Row } from "react-bootstrap";
 import {
   SiVisualstudiocode,
-  SiPostman,
-  SiSlack,
-  SiVercel,
-  SiMacos,
   SiNetlify,
   SiCanva,
 } from "react-icons/si";
-import { FaFigma } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+
 
 function Toolstack() {
   return (
