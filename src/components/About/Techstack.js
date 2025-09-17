@@ -4,27 +4,10 @@ import { Col, Row } from "react-bootstrap";
   import { FaMicrochip, FaProjectDiagram, FaCode } from "react-icons/fa";
   import { GiCircuitry } from "react-icons/gi";
   import { MdDeveloperBoard } from "react-icons/md";
+  
   import {
-    DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
   DiPython,
-  DiGit,
-  DiJava,
 } from "react-icons/di";
-import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
-  SiSvelte,
-  SiMysql,
-  SiTailwindcss,
-  SiBootstrap,
-} from "react-icons/si";
-
 
 function Techstack() {
   return (
