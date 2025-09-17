@@ -1,0 +1,203 @@
+
+.project-details-overlay {
+  position: fixed;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* dark transparent overlay */
+  backdrop-filter: blur(2px);     /* background blur */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* make sure it's above everything */
+  animation: fadeIn 0.28s ease-in-out;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Modal box (center) */
+.project-details-modal {
+  background: rgba(20, 20, 35, 0.85);
+  border: 1px solid hsla(288, 33%, 42%, 0.85);
+  border-radius: 14px;
+  padding: 22px;
+  max-width: 840px;
+  width: 92%;
+  height: 90vh;              
+  max-height: 90vh;         
+  color: #ffffff;
+  box-shadow: 0 2px 10px rgba(98, 54, 134, 0.85);
+  transform: scale(0.88);
+  opacity: 0;
+  animation: scaleIn 0.28s ease-out forwards;
+  position: relative;
+  display: flex;           
+  flex-direction: column;   
+}
+
+/* small X at top-right */
+.project-details-x {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: transparent;
+  color: #eae6ff;
+  border: none;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 6px;
+  border-radius: 6px;
+}
+.project-details-x:hover {
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* inner content layout */
+.project-details-inner {
+  text-align: center;
+  flex: 1;                   
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;       
+}
+
+/* image */
+.project-image {
+  width: 50%;
+  max-height: 240px;         
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  margin-left: 200px;
+  border: 2px solid rgba(129, 72, 144, 0.55);
+  box-shadow: 0 0 10px rgba(167, 112, 239, 0.35);
+}
+
+/* title and description */
+.project-details-title {
+  color: #c084fc; 
+  font-size: 1.6rem;
+  margin: 8px 0 12px;
+  font-weight: 600;
+}
+.project-details-desc {
+  color: #e6e6e8;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+  flex: 1;                  
+  overflow-y: auto;         
+  padding-right: 8px;
+  margin-top: 10px;
+}
+
+/* actions */
+.project-details-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+/* demo link style */
+.project-demo-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: rgba(98, 54, 134, 0.9);
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid rgba(98, 54, 134, 0.95);
+  transition: all 0.18s ease;
+}
+.project-demo-btn:hover {
+  background: #6d20c5d7;
+  box-shadow: 0 6px 18px rgba(129, 72, 144, 0.35);
+}
+
+.project-details-close:hover {
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 0 8px rgba(129, 72, 144, 0.2);
+}
+
+/* Animations */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.88);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* mobile adjustments */
+@media (max-width: 640px) {
+  .project-details-modal { max-width: 96%; padding: 14px; }
+  .project-image { max-height: 220px; }
+  .project-details-title { font-size: 1.25rem; }
+}
+
+/* Navigation arrows */
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid rgba(129, 72, 144, 0.85); /* purple border */
+  background: rgba(146, 113, 113, 0.05); /* transparent background */
+  color: #fff; /* white arrow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10000;
+  font-size: 20px;
+  transition: all 0.25s ease;
+  box-shadow: 0 0 12px rgba(129, 72, 144, 0.55); /* purple glow */
+}
+
+.nav-arrow.left {
+  left: -80px; /* position outside modal box */
+}
+
+.nav-arrow.right {
+  right: -80px; /* position outside modal box */
+}
+
+.nav-arrow:hover {
+  background: rgba(129, 72, 144, 0.25);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 0 18px rgba(167, 112, 239, 0.75);
+}
+
+/* Style for custom bullet list */
+.custom-bullet-list {
+  list-style: disc inside;    /* normal bullets */
+  margin-top: 12px;
+  padding-left: 16px;
+}
+
+/* Gradient shiny text for bullet points */
+.gradient-bullet {
+  font-family: "Segoe UI", monospace; /* different font */
+  font-weight: 600;
+  background: linear-gradient(90deg, #ffffff, #ffffffbf, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+/* Shining gradient animation */
+@keyframes shine {
+  100% { background-position: 200px 0; }
+}

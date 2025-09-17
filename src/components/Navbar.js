@@ -36,7 +36,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <h1 style={{ color: '#b562d6', fontSize: '40px', fontWeight: 'bold', fontFamily: 'Orbitron, sans-serif', letterSpacing: '4px' }}>PC</h1>
+          <h1 style={{ color: '#b562d6', fontSize: '40px', fontWeight: '10000' , fontFamily: 'Orbitron, sans-serif', letterSpacing: '4px' }}>PC</h1>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
