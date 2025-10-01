@@ -141,10 +141,22 @@
 
 /* mobile adjustments */
 @media (max-width: 640px) {
-  .project-details-modal { max-width: 96%; padding: 14px; }
-  .project-image { max-height: 220px; }
-  .project-details-title { font-size: 1.25rem; }
+  .project-details-modal { 
+    max-width: 96%; 
+    padding: 14px; 
+  }
+  .project-image { 
+    max-height: 220px; 
+    margin-left: auto;  
+    margin-right: auto; 
+    display: block;     
+    width: 80%;          
+  }
+  .project-details-title { 
+    font-size: 1.25rem; 
+  }
 }
+
 
 /* Navigation arrows */
 .nav-arrow {

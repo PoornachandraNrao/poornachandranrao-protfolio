@@ -2,8 +2,8 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { SiArduino, SiKicad, SiEclipseide } from "react-icons/si";
 import { FaMicrochip, FaProjectDiagram, FaCode } from "react-icons/fa";
-  import { GiCircuitry } from "react-icons/gi";
-  import { MdDeveloperBoard } from "react-icons/md";
+import { GiCircuitry } from "react-icons/gi";
+import { MdDeveloperBoard } from "react-icons/md";
   
   import {
   DiPython,

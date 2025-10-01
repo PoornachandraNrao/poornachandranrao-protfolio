@@ -4,6 +4,14 @@ import {
   SiVisualstudiocode,
   SiNetlify,
   SiCanva,
+  SiFigma,
+  SiPhotopea,
+  SiAdobephotoshop,
+  SiAdobeaftereffects,
+  SiAdobepremierepro,
+  SiAdobelightroom,
+  SiVercel,
+  SiGithub,
 } from "react-icons/si";
 
 
@@ -19,6 +27,29 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiNetlify />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFigma/>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPhotopea/>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAdobephotoshop/>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAdobeaftereffects/>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAdobelightroom/>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAdobepremierepro/>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiVercel/>
+      </Col><Col xs={4} md={2} className="tech-icons">
+        <SiGithub/>
       </Col>
     </Row>
   );

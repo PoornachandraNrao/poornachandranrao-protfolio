@@ -10,6 +10,7 @@ import stock from "../../Assets/Projects/20.png";
 import pet_squad from "../../Assets/Projects/19.png";
 import iphone from "../../Assets/Projects/18.png";
 import tulucentre from "../../Assets/Projects/17.png";
+import tulucentre1 from "../../Assets/Projects/22.png";
 
 function Projects() {
   const [currentIndex, setCurrentIndex] = useState(null);
@@ -83,6 +84,16 @@ function Projects() {
         What was done: Designed and deployed a multimedia wedding invitation website with interactive features, and Google Maps support.
         Advantage: Provides real-time event details, improves guest engagement through wishes, and enhances the overall experience with animations and audio.`,
       demoLink: "https://chethan-weds-thejaswini.on.drv.tw/inv5/",
+    },
+
+    
+    {
+      imgPath: tulucentre1,
+      title: "Ultrasonic Sensor using Raspberry Pi4 and Linux Kernel Module",
+      description:
+        "We developed an ultrasonic distance measurement system using a Raspberry Pi 4 and the HC-SR04 sensor. The system was programmed in C with a custom Linux Kernel Module to control GPIOs and measure distances in real time. Additionally, we created a website using HTML and CSS for the front end and linked the sensor data to it using Python.",
+      longDescription:`
+        In this project, we developed an ultrasonic distance measurement system using a Raspberry Pi 4 and the HC-SR04 sensor. The system was implemented in C with system calls and a custom Linux Kernel Module to control GPIO pins, send trigger pulses, and capture echo timings with microsecond precision. It measures distances between objects in meters and provides real-time readings for embedded applications. Additionally, we created a web interface using HTML and CSS for the front end, while Python was used to link and display the sensor data on the website. `,
     },
   ];
 
