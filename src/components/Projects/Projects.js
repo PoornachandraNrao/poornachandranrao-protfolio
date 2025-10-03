@@ -34,6 +34,7 @@ function Projects() {
     {
       imgPath: tulucentre,
       title: "Weather Monitoring Dashboard (College-Funded, Ongoing)",
+      
       description:
         "Designed and deployed a dual-Raspberry Pi IoT weather monitoring system with advanced environmental sensors (CO, O₃, PM, wind, rainfall, temperature, humidity). The rooftop Pi with a custom KiCad board collects sensor data and uploads it to Firebase Cloud, while a base-station Pi at the college entrance auto-connects to Wi-Fi and displays real-time dashboards via Python (PyQt5, Flask).",
       longDescription: `
@@ -79,6 +80,7 @@ function Projects() {
     {
       imgPath: iphone,
       title: "Interactive Wedding Invitation Website (With AI Integration)",
+      
       description:
         "Built a responsive wedding invitation website using HTML, CSS, and JavaScript with features like countdown timers, image galleries, and a 3D animated card with audio. Added a “Send Your Wish” section with heart animations, Firebase integration, and Google Maps support to enhance interactivity and user experience.",
       longDescription:`
