@@ -31,17 +31,38 @@ function Projects() {
       Future use: Can be upgraded with cloud storage, AI-based recognition, voice assistants, and integration into smart home systems.
       `
       },
+    
     {
       imgPath: tulucentre,
-      title: "Weather Monitoring Dashboard (College-Funded, Ongoing)",
+      title: "IoT Weather Monitoring Dashboard (Deployed at NITTE Campus)",
       description:
-        "Designed and implemented an IoT-based weather monitoring dashboard using Raspberry Pi, Python (PyQt5, Flask), and cloud integration to display real-time data on temperature, humidity, rainfall, air quality, and wind. Completed as a college-supported project, the system is yet to be deployed permanently at the NITTE campus entrance.",
-      longDescription: `
-        This project involved developing a real-time weather monitoring dashboard using Raspberry Pi, Python (PyQt5 and Flask), and cloud integration to display live data such as temperature, humidity, rainfall, air quality, and wind speed at the college entrance. The system was designed for permanent deployment on campus, ensuring reliable access to environmental data.
-        What was done: Created a weather dashboard with Raspberry Pi and cloud integration.
-        Why: To provide students and staff with live weather and air quality updates.
-        Advantage: Interactive, reliable, and accessible real-time monitoring system.
-        Future use: Can be expanded with predictive analytics, mobile apps, and smart campus integration.
+        "Designed and deployed a dual-Raspberry Pi IoT weather monitoring system with advanced environmental sensors (CO, O₃, PM, wind, rainfall, temperature, humidity). The rooftop Pi with a custom KiCad board collects sensor data and uploads it to Firebase Cloud, while a base-station Pi at the college entrance auto-connects to Wi-Fi and displays real-time dashboards via Python (PyQt5, Flask).",
+      longDescription:`
+        This project involved building a full-scale IoT weather monitoring system for the NITTE campus. 
+        A custom sensor board (designed in KiCad) was connected to a Raspberry Pi on the rooftop, 
+        measuring CO (EC4-500-CO), Ozone (SGX-4O3-20), Temperature/Humidity (SHT31), PM (IH-PMC-001), 
+        Wind (SN-*-CFSFX-N01), and Rainfall (tipping bucket). 
+        The data was uploaded to Firebase Cloud through Python scripts. 
+        
+        At the base station, another Raspberry Pi auto-connects to Wi-Fi, authenticates, 
+        fetches data from Firebase, and runs an interactive Python dashboard built with PyQt5 and Flask, 
+        shown on a dedicated monitor at the campus entrance. 
+
+        What was done: 
+        • Designed custom PCB in KiCad and interfaced multiple sensors with Raspberry Pi.  
+        • Built a cloud-backed data pipeline using Firebase.  
+        • Developed a PyQt5 + Flask dashboard for kiosk-style real-time display.  
+
+        Why: 
+        To provide students, staff, and visitors with live environmental and air-quality insights 
+        instead of relying on generic weather APIs.  
+
+        Advantage: 
+        Permanent, scalable,multi-sensor integration.  
+
+        Future use: 
+        Expansion to mobile/web apps, predictive analytics with ML, and integration into 
+        a smart campus ecosystem.  
       `,
       demoLink: "https://nmamit-weather-station.web.app",
     },
