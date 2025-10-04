@@ -11,12 +11,12 @@ import pet_squad from "../../Assets/Projects/19.png";
 import iphone from "../../Assets/Projects/18.png";
 import tulucentre from "../../Assets/Projects/17.png";
 import tulucentre1 from "../../Assets/Projects/22.png";
+import tulucentre2 from "../../Assets/Projects/23.png";
 
 function Projects() {
   const [currentIndex, setCurrentIndex] = useState(null);
   const [showDetails, setShowDetails] = useState(false);
 
-  // Put all project data in one place
   const projectList = [
     {
       imgPath: pet_squad,
@@ -47,6 +47,39 @@ function Projects() {
         Future use: Expansion to mobile/web apps, predictive analytics with ML, and integration into a smart campus ecosystem.
       `,
       demoLink: "https://nmamit-weather-station.web.app",
+    },
+      {
+        imgPath: tulucentre2, 
+        title: "Arduino PC IDE — Custom Python-based Arduino Development Environment",
+        description:
+          "Built a full-featured Arduino development environment from scratch using Python and PyQt5. It allows users to write, compile, and upload Arduino sketches without using the official Arduino IDE. Integrated real-time serial monitoring, syntax highlighting, and hardware communication through AVR-GCC and avrdude.",
+        longDescription: `
+          This project re-engineers the Arduino IDE experience into a fully custom Python-based interface. 
+          Using PyQt5 for GUI and PySerial for hardware communication, it lets users create, compile, and upload Arduino sketches directly from the application — without relying on the official Arduino IDE.
+          
+          What was done:Designed a modern, user-friendly interface with syntax highlighting, serial monitor, and live console output.  Integrated AVR-GCC compiler and avrdude uploader for complete end-to-end firmware flashing.Added background threading for compilation and serial communication to prevent UI freezing. 
+          
+          Why:To create a lightweight, educational Arduino IDE alternative for students, hobbyists, and developers who want transparency in the compile–upload process.
+
+          Technologies Used:
+            • Python 3.11  
+            • PyQt5 (for GUI)  
+            • PySerial (for serial communication)  
+            • AVR-GCC / AVRDUDE (for build and upload toolchain)  
+            • Regular Expressions & QSyntaxHighlighter (for syntax coloring)  
+
+          Advantages:Runs independently of the official Arduino IDE.Modular and extensible design.Real-time serial monitor integrated within the GUI.    
+
+          Future Enhancements:Add Serial Data Plotter for visualizing sensor outputs.Introduce code auto-completion and error highlighting.Theme customization (dark/light mode). Cloud-based library management and sketch sync.
+        `,
+      },
+      {
+      imgPath: tulucentre1,
+      title: "Ultrasonic Sensor using Raspberry Pi4 and Linux Kernel Module",
+      description:
+        "We developed an ultrasonic distance measurement system using a Raspberry Pi 4 and the HC-SR04 sensor. The system was programmed in C with a custom Linux Kernel Module to control GPIOs and measure distances in real time. Additionally, we created a website using HTML and CSS for the front end and linked the sensor data to it using Python.",
+      longDescription:`
+        In this project, we developed an ultrasonic distance measurement system using a Raspberry Pi 4 and the HC-SR04 sensor. The system was implemented in C with system calls and a custom Linux Kernel Module to control GPIO pins, send trigger pulses, and capture echo timings with microsecond precision. It measures distances between objects in meters and provides real-time readings for embedded applications. Additionally, we created a web interface using HTML and CSS for the front end, while Python was used to link and display the sensor data on the website. `,
     },
     {
       imgPath: stock,
@@ -91,14 +124,7 @@ function Projects() {
     },
 
     
-    {
-      imgPath: tulucentre1,
-      title: "Ultrasonic Sensor using Raspberry Pi4 and Linux Kernel Module",
-      description:
-        "We developed an ultrasonic distance measurement system using a Raspberry Pi 4 and the HC-SR04 sensor. The system was programmed in C with a custom Linux Kernel Module to control GPIOs and measure distances in real time. Additionally, we created a website using HTML and CSS for the front end and linked the sensor data to it using Python.",
-      longDescription:`
-        In this project, we developed an ultrasonic distance measurement system using a Raspberry Pi 4 and the HC-SR04 sensor. The system was implemented in C with system calls and a custom Linux Kernel Module to control GPIO pins, send trigger pulses, and capture echo timings with microsecond precision. It measures distances between objects in meters and provides real-time readings for embedded applications. Additionally, we created a web interface using HTML and CSS for the front end, while Python was used to link and display the sensor data on the website. `,
-    },
+    
   ];
 
   const handleOpen = (index) => {
