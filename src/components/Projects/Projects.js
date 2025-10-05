@@ -82,20 +82,6 @@ function Projects() {
         In this project, we developed an ultrasonic distance measurement system using a Raspberry Pi 4 and the HC-SR04 sensor. The system was implemented in C with system calls and a custom Linux Kernel Module to control GPIO pins, send trigger pulses, and capture echo timings with microsecond precision. It measures distances between objects in meters and provides real-time readings for embedded applications. Additionally, we created a web interface using HTML and CSS for the front end, while Python was used to link and display the sensor data on the website. `,
     },
     {
-      imgPath: stock,
-      title: "Weather Station",
-      description:
-        "Developed a stock price prediction app using Python and Streamlit, leveraging historical data and financial indicators to forecast trends with interactive visualizations. Built an IoT weather station using ESP8266 NodeMCU and DHT11 sensor, integrating LCD display and Arduino IDE for real-time monitoring of temperature and humidity.",
-      longDescription: `
-        This project focused on building a basic IoT weather station using an ESP8266 NodeMCU microcontroller with a DHT11 sensor to measure temperature and humidity, displaying real-time output on both a 16x2 LCD and the serial monitor. The system was coded in Arduino IDE and assembled into a simple model structure for demonstration.
-        
-        What was done: Designed a low-cost weather station with ESP8266, DHT11, and LCD.
-        Why: To gain practical exposure in IoT, sensor integration, and Arduino programming.
-        Advantage: Provides real-time temperature and humidity monitoring at low cost.
-        Future use: Can be enhanced with more sensors (air quality, rainfall) and cloud-based dashboards.
-      `
-    },
-    {
       imgPath: dice,
       title: "8-Bit Sequential Counter with 7-Segment Display (Verilog)",
       description:
@@ -121,6 +107,21 @@ function Projects() {
         What was done: Designed and deployed a multimedia wedding invitation website with interactive features, and Google Maps support.
         Advantage: Provides real-time event details, improves guest engagement through wishes, and enhances the overall experience with animations and audio.`,
       demoLink: "https://chethan-weds-thejaswini.on.drv.tw/inv5/",
+    },
+
+    {
+      imgPath: stock,
+      title: "Weather Station",
+      description:
+        "Developed a stock price prediction app using Python and Streamlit, leveraging historical data and financial indicators to forecast trends with interactive visualizations. Built an IoT weather station using ESP8266 NodeMCU and DHT11 sensor, integrating LCD display and Arduino IDE for real-time monitoring of temperature and humidity.",
+      longDescription: `
+        This project focused on building a basic IoT weather station using an ESP8266 NodeMCU microcontroller with a DHT11 sensor to measure temperature and humidity, displaying real-time output on both a 16x2 LCD and the serial monitor. The system was coded in Arduino IDE and assembled into a simple model structure for demonstration.
+        
+        What was done: Designed a low-cost weather station with ESP8266, DHT11, and LCD.
+        Why: To gain practical exposure in IoT, sensor integration, and Arduino programming.
+        Advantage: Provides real-time temperature and humidity monitoring at low cost.
+        Future use: Can be enhanced with more sensors (air quality, rainfall) and cloud-based dashboards.
+      `
     },
 
     
