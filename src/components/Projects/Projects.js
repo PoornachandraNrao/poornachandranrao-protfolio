@@ -81,6 +81,19 @@ function Projects() {
       longDescription:`
         In this project, we developed an ultrasonic distance measurement system using a Raspberry Pi 4 and the HC-SR04 sensor. The system was implemented in C with system calls and a custom Linux Kernel Module to control GPIO pins, send trigger pulses, and capture echo timings with microsecond precision. It measures distances between objects in meters and provides real-time readings for embedded applications. Additionally, we created a web interface using HTML and CSS for the front end, while Python was used to link and display the sensor data on the website. `,
     },
+
+    {
+      imgPath: iphone,
+      title: "Interactive Wedding Invitation Website (With AI Integration)",
+      
+      description:
+        "Built a responsive wedding invitation website using HTML, CSS, and JavaScript with features like countdown timers, image galleries, and a 3D animated card with audio. Added a “Send Your Wish” section with heart animations, Firebase integration, and Google Maps support to enhance interactivity and user experience.",
+      longDescription:`
+        This project focused on creating a responsive and interactive wedding invitation website that combined creative design with modern front-end development. It included features such as countdown timers, a 3D animated invitation card with audio, an auto-scrolling image gallery, and a guest participation section “Send Your Wish”. Additionally, Google Maps support was added for event locations, making the website a digital alternative to traditional printed invitations.
+        What was done: Designed and deployed a multimedia wedding invitation website with interactive features, and Google Maps support.
+        Advantage: Provides real-time event details, improves guest engagement through wishes, and enhances the overall experience with animations and audio.`,
+      demoLink: "https://chethan-weds-thejaswini.on.drv.tw/inv5/",
+    },
     {
       imgPath: dice,
       title: "8-Bit Sequential Counter with 7-Segment Display (Verilog)",
@@ -94,19 +107,6 @@ function Projects() {
         Advantage: Simple, cost-effective way to display higher counts with limited hardware.
         Future use: Can be applied in digital clocks, timers, and embedded system counters.
       `
-    },
-
-    {
-      imgPath: iphone,
-      title: "Interactive Wedding Invitation Website (With AI Integration)",
-      
-      description:
-        "Built a responsive wedding invitation website using HTML, CSS, and JavaScript with features like countdown timers, image galleries, and a 3D animated card with audio. Added a “Send Your Wish” section with heart animations, Firebase integration, and Google Maps support to enhance interactivity and user experience.",
-      longDescription:`
-        This project focused on creating a responsive and interactive wedding invitation website that combined creative design with modern front-end development. It included features such as countdown timers, a 3D animated invitation card with audio, an auto-scrolling image gallery, and a guest participation section “Send Your Wish”. Additionally, Google Maps support was added for event locations, making the website a digital alternative to traditional printed invitations.
-        What was done: Designed and deployed a multimedia wedding invitation website with interactive features, and Google Maps support.
-        Advantage: Provides real-time event details, improves guest engagement through wishes, and enhances the overall experience with animations and audio.`,
-      demoLink: "https://chethan-weds-thejaswini.on.drv.tw/inv5/",
     },
 
     {
